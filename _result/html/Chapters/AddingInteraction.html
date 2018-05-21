@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pharo Book</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+<link href="/_support/html/css/font-awesome.min.css" rel="stylesheet">
+<link href="/_support/html/css/nucleus.css" rel="stylesheet">
+<link href="/_support/html/css/flex.css" rel="stylesheet">
+<link rel="stylesheet" href="/_support/html/highlightjs/styles/default.css">
+<link rel="stylesheet" href="/_support/html/css/highlight-commands.css">
+<link rel="stylesheet" href="/_support/html/css/bootstrap.min.css">
+<script src="/_support/html/js/jquery-2.x.min.js"></script>
+<script src="/_support/html/highlightjs/highlight.pack.js"></script>
+<script src="/_support/html/js/highlight-commands.js"></script>
+<meta name="description" content="">
+<meta name="author" content="Andrei Chiș, Stéphane Ducasse and Aliaksei Syrel">
+  </head>
+  <body>
+    <header>
+  <div class="logo">
+    <a class="baselink" href="/memorygame.html">Pharo Book</a>
+  </div>
+  <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
+  
+</header>
+<article>
+  <aside>
+    <ul class="menu">
+   		<li data-nav-id="123" class="dd-item">
+    		<a href="/memorygame.html">
+		       <i class="fa fa-fw fa-home"></i>
+	    	</a>
+        </li>
+
+		
+		  <li class="dd-item  haschildren ">
+			<div>
+			  <a href="/Chapters/MemoryGameModel.html#objectives of this book">
+					Objectives of this book
+			  </a>
+			   <i class="fa fa-angle-right fa-lg category-icon"></i> 
+			</div>
+			  <ul class="dd-item">
+				
+		   	  	<li class="dd-item ">
+					<div>
+						<a href="/Chapters/MemoryGameModel.html#memory game">
+							Memory game
+						</a>
+						
+					</div>
+
+					<ul class="dd-item">
+					
+					</ul>						
+				</li>
+				
+		   	  	<li class="dd-item ">
+					<div>
+						<a href="/Chapters/MemoryGameModel.html#getting started">
+							Getting started
+						</a>
+						
+					</div>
+
+					<ul class="dd-item">
+					
+					</ul>						
+				</li>
+				
+		   	  	<li class="dd-item ">
+					<div>
+						<a href="/Chapters/MemoryGameModel.html#loading the memory game">
+							Loading the Memory Game
+						</a>
+						
+					</div>
+
+					<ul class="dd-item">
+					
+					</ul>						
+				</li>
+				
+			  </ul>
+		  
+		  </li>
+		
+		  <li class="dd-item  haschildren ">
+			<div>
+			  <a href="/Chapters/MemoryGameModel.html#game model insights">
+					Game model insights
+			  </a>
+			   <i class="fa fa-angle-right fa-lg category-icon"></i> 
+			</div>
+			  <ul class="dd-item">
+				
+		   	  	<li class="dd-item ">
+					<div>
+						<a href="/Chapters/MemoryGameModel.html#reviewing the card model">
+							Reviewing the card model
+						</a>
+						
+					</div>
+
+					<ul class="dd-item">
+					
+					</ul>						
+				</li>
+				
+		   	  	<li class="dd-item ">
+					<div>
+						<a href="/Chapters/MemoryGameModel.html#card simple operations">
+							Card simple operations
+						</a>
+						
+					</div>
+
+					<ul class="dd-item">
+					
+					</ul>						
+				</li>
+				
+		   	  	<li class="dd-item ">
+					<div>
+						<a href="/Chapters/MemoryGameModel.html#adding notification">
+							Adding notification
+						</a>
+						
+					</div>
+
+					<ul class="dd-item">
+					
+					</ul>						
+				</li>
+				
+		   	  	<li class="dd-item ">
+					<div>
+						<a href="/Chapters/MemoryGameModel.html#reviewing the game model">
+							Reviewing the game model
+						</a>
+						
+					</div>
+
+					<ul class="dd-item">
+					
+					</ul>						
+				</li>
+				
+		   	  	<li class="dd-item ">
+					<div>
+						<a href="/Chapters/MemoryGameModel.html#grid size and card number">
+							Grid size and card number
+						</a>
+						
+					</div>
+
+					<ul class="dd-item">
+					
+					</ul>						
+				</li>
+				
+		   	  	<li class="dd-item ">
+					<div>
+						<a href="/Chapters/MemoryGameModel.html#initialization">
+							Initialization
+						</a>
+						
+					</div>
+
+					<ul class="dd-item">
+					
+					</ul>						
+				</li>
+				
+		   	  	<li class="dd-item ">
+					<div>
+						<a href="/Chapters/MemoryGameModel.html#game logic">
+							Game logic
+						</a>
+						
+					</div>
+
+					<ul class="dd-item">
+					
+					</ul>						
+				</li>
+				
+		   	  	<li class="dd-item ">
+					<div>
+						<a href="/Chapters/MemoryGameModel.html#ready ">
+							Ready 
+						</a>
+						
+					</div>
+
+					<ul class="dd-item">
+					
+					</ul>						
+				</li>
+				
+			  </ul>
+		  
+		  </li>
+		
+		  <li class="dd-item  haschildren ">
+			<div>
+			  <a href="/Chapters/BuildingUI.html#building card graphical elements">
+					Building card graphical elements
+			  </a>
+			   <i class="fa fa-angle-right fa-lg category-icon"></i> 
+			</div>
+			  <ul class="dd-item">
+				
+		   	  	<li class="dd-item ">
+					<div>
+						<a href="/Chapters/BuildingUI.html#first: the card element">
+							First: the card element
+						</a>
+						
+					</div>
+
+					<ul class="dd-item">
+					
+					</ul>						
+				</li>
+				
+		   	  	<li class="dd-item ">
+					<div>
+						<a href="/Chapters/BuildingUI.html#starting to draw a card">
+							Starting to draw a card
+						</a>
+						
+					</div>
+
+					<ul class="dd-item">
+					
+					</ul>						
+				</li>
+				
+		   	  	<li class="dd-item ">
+					<div>
+						<a href="/Chapters/BuildingUI.html#improving the card visual ">
+							Improving the card visual 
+						</a>
+						
+					</div>
+
+					<ul class="dd-item">
+					
+					</ul>						
+				</li>
+				
+		   	  	<li class="dd-item ">
+					<div>
+						<a href="/Chapters/BuildingUI.html#preparing flipping">
+							Preparing flipping
+						</a>
+						
+					</div>
+
+					<ul class="dd-item">
+					
+					</ul>						
+				</li>
+				
+		   	  	<li class="dd-item ">
+					<div>
+						<a href="/Chapters/BuildingUI.html#adding a cross">
+							Adding a cross
+						</a>
+						
+					</div>
+
+					<ul class="dd-item">
+					
+					</ul>						
+				</li>
+				
+		   	  	<li class="dd-item ">
+					<div>
+						<a href="/Chapters/BuildingUI.html#full cross">
+							Full cross
+						</a>
+						
+					</div>
+
+					<ul class="dd-item">
+					
+					</ul>						
+				</li>
+				
+		   	  	<li class="dd-item ">
+					<div>
+						<a href="/Chapters/BuildingUI.html#flipped side ">
+							Flipped side 
+						</a>
+						
+					</div>
+
+					<ul class="dd-item">
+					
+					</ul>						
+				</li>
+				
+			  </ul>
+		  
+		  </li>
+		
+		  <li class="dd-item  haschildren ">
+			<div>
+			  <a href="/Chapters/BuildingUI.html#adding a board view">
+					Adding a board view
+			  </a>
+			   <i class="fa fa-angle-right fa-lg category-icon"></i> 
+			</div>
+			  <ul class="dd-item">
+				
+		   	  	<li class="dd-item ">
+					<div>
+						<a href="/Chapters/BuildingUI.html#the gameelement class">
+							The GameElement class
+						</a>
+						
+					</div>
+
+					<ul class="dd-item">
+					
+					</ul>						
+				</li>
+				
+		   	  	<li class="dd-item ">
+					<div>
+						<a href="/Chapters/BuildingUI.html#creating cards">
+							Creating cards
+						</a>
+						
+					</div>
+
+					<ul class="dd-item">
+					
+					</ul>						
+				</li>
+				
+		   	  	<li class="dd-item ">
+					<div>
+						<a href="/Chapters/BuildingUI.html#updating the container to its children">
+							Updating the container to its children
+						</a>
+						
+					</div>
+
+					<ul class="dd-item">
+					
+					</ul>						
+				</li>
+				
+		   	  	<li class="dd-item ">
+					<div>
+						<a href="/Chapters/BuildingUI.html#getting all the children displayed">
+							Getting all the children displayed
+						</a>
+						
+					</div>
+
+					<ul class="dd-item">
+					
+					</ul>						
+				</li>
+				
+		   	  	<li class="dd-item ">
+					<div>
+						<a href="/Chapters/BuildingUI.html#separating cards">
+							Separating cards
+						</a>
+						
+					</div>
+
+					<ul class="dd-item">
+					
+					</ul>						
+				</li>
+				
+			  </ul>
+		  
+		  </li>
+		
+		  <li class="dd-item  haschildren ">
+			<div>
+			  <a href="/Chapters/AddingInteraction.html#adding interaction">
+					Adding Interaction
+			  </a>
+			   <i class="fa fa-angle-right fa-lg category-icon"></i> 
+			</div>
+			  <ul class="dd-item">
+				
+		   	  	<li class="dd-item ">
+					<div>
+						<a href="/Chapters/AddingInteraction.html#an event listener">
+							An event listener
+						</a>
+						
+					</div>
+
+					<ul class="dd-item">
+					
+					</ul>						
+				</li>
+				
+		   	  	<li class="dd-item ">
+					<div>
+						<a href="/Chapters/AddingInteraction.html#adding event listeners">
+							Adding event listeners
+						</a>
+						
+					</div>
+
+					<ul class="dd-item">
+					
+					</ul>						
+				</li>
+				
+		   	  	<li class="dd-item ">
+					<div>
+						<a href="/Chapters/AddingInteraction.html#specialize clickevent:">
+							Specialize clickEvent:
+						</a>
+						
+					</div>
+
+					<ul class="dd-item">
+					
+					</ul>						
+				</li>
+				
+		   	  	<li class="dd-item ">
+					<div>
+						<a href="/Chapters/AddingInteraction.html#connecting the model to the ui">
+							Connecting the model to the UI
+						</a>
+						
+					</div>
+
+					<ul class="dd-item">
+					
+					</ul>						
+				</li>
+				
+		   	  	<li class="dd-item ">
+					<div>
+						<a href="/Chapters/AddingInteraction.html#handling disappear">
+							Handling disappear
+						</a>
+						
+					</div>
+
+					<ul class="dd-item">
+					
+					</ul>						
+				</li>
+				
+		   	  	<li class="dd-item ">
+					<div>
+						<a href="/Chapters/AddingInteraction.html#refreshing on missed pair">
+							Refreshing on missed pair
+						</a>
+						
+					</div>
+
+					<ul class="dd-item">
+					
+					</ul>						
+				</li>
+				
+		   	  	<li class="dd-item ">
+					<div>
+						<a href="/Chapters/AddingInteraction.html#conclusion">
+							Conclusion
+						</a>
+						
+					</div>
+
+					<ul class="dd-item">
+					
+					</ul>						
+				</li>
+				
+			  </ul>
+		  
+		  </li>
+		
+    </ul>
+  </aside>
+
+  <section class="page">
+    
+	<h1>Building a memory game with Bloc</h1>
+		
+	
+<h2>Adding Interaction</h2>
+
+<p>
+Now we will add interaction to the game. We want to flip the cards by clicking on them. 
+Bloc supports such situations using two mechanisms: on one hand, event listeners handle events
+and on the other hand, the communication between the model and view is managed via the registration to announcements
+sent by the model.
+</p>
+
+<h3>An event listener</h3>
+
+<figure><pre><code>BlElementEventListener subclass: #MgdCardEventListener
+	instanceVariableNames: 'memoryGame'
+	classVariableNames: ''
+	package: 'Bloc-MemoryGame-Demo-Elements'</code></pre><figcaption></figcaption></figure>
+
+<p>
+We add an instance variable <code>memoryGame</code> holding a game model to the listener because 
+we will need to access the model to react to events for example to update the game situation. 
+</p>
+<figure><pre><code>MgdCardEventListener &gt;&gt; memoryGame: aGameModel
+	memoryGame := aGameModel</code></pre><figcaption></figcaption></figure>
+
+<p>
+Let us redefine the <code>clickEvent:</code> method to raise a debugger. It will give us the occasion to introspect the system.
+</p>
+<figure><pre><code>MgdCardEventListener &gt;&gt; clickEvent: anEvent
+	self halt</code></pre><figcaption></figcaption></figure>
+
+
+
+
+<h3>Adding event listeners</h3>
+
+<p>
+Now we should add the card event listener to each card because we want to know which card will be clicked and pass this 
+information to the game model.
+</p>
+
+<figure><pre><code>MgdGameElement &gt;&gt; newCardEventListener
+	^ MgdCardEventListener new</code></pre><figcaption></figcaption></figure>
+
+<p>
+For that we have to extend <code>#memoryGame:</code> model setter in <code>MgdGameElement</code> as follows by adding a card event listener to every card element using <code>#addEventHandler:</code>: 
+</p>
+<figure><pre><code>MgdGameElement &gt;&gt; memoryGame: aMgdGameModel
+	| aCardEventListener |
+	
+	memoryGame := aMgdGameModel.
+	aCardEventListener := self newCardEventListener memoryGame: aMgdGameModel.
+	
+	self layout columnCount: memoryGame gridSize.
+	
+	memoryGame availableCards
+		do: [ :aCard | 
+			| cardElement |
+			cardElement := self newCardElement card: aCard.
+			cardElement addEventHandler: aCardEventListener.
+			self addChild: cardElement ]</code></pre><figcaption></figcaption></figure>
+
+<p>
+Please note, that in our case we can reuse the same event handler for all card elements. It allows us to reduce overall memory consumption and improve game initialisation time.
+</p>
+<p>
+<a id="figBoardFull"></a>
+<figure>
+	<img src="figures/ClickWithDebugger.png" width="100%" id="figBoardFull" alt="Debugging the clickEvent: anEvent method."/>
+	<figcaption>Debugging the clickEvent: anEvent method.</figcaption>
+</figure>
+</p>
+
+<p>
+Now the preview is not enough and we should create a window and embed the game element. 
+Then when you click on an card you should get a debugger as shown in Figure <a href="#figBoardFull"></a>.
+</p><figure><pre><code>space := BlSpace new.
+space extent: 420@420.  
+game := MgdGameModel numbers.
+grid := MgdGameElement new.
+grid memoryGame: game. 
+space root addChild: grid.
+space show </code></pre><figcaption></figcaption></figure>
+
+
+<h3>Specialize clickEvent:</h3>
+<p>
+Now we can specialise the <code>clickEvent:</code> method as follows: 
+</p><ul>
+<li>We get the graphical element that receives the mouse click using the message <code>currentTarget</code>. The message <code>currentTarget</code> returns the element that receives an event.</li>
+<li>From this graphical card we access the card model and we pass this card model to the game model. </li>
+</ul>
+
+<figure><pre><code>MgdCardEventListener &gt;&gt; clickEvent: anEvent
+	memoryGame chooseCard: anEvent currentTarget card</code></pre><figcaption></figcaption></figure>
+
+<p>
+It means that the memory game model is changed but we do not see the visual effect of our actions. Indeed this is normal. We never made sure that visual elements are listening to model changes.  This is what we will do in the following chapter. 
+</p>
+
+
+<h3>Connecting the model to the UI</h3>
+<p>
+Now we show how the domain communicates with the user interface: the domain emits notifications
+using announcements but it does not refer to the UI elements. It is the visual elements that should register to the notifications and react accordingly.
+</p>
+
+<p>
+Let us first define two simple methods in the class <code>MgdRawCardElement</code> just producing a trace.
+</p><figure><pre><code>MgdRawCardElement &gt;&gt; onDisappear
+	Transcript show: 'On disappear'; cr</code></pre><figcaption></figcaption></figure>
+
+<figure><pre><code>MgdRawCardElement &gt;&gt; onFlipped
+	Transcript show: 'On flipped'; cr</code></pre><figcaption></figcaption></figure>
+
+<p>
+Now we can modify the setter so that when a card model is set to a card graphical element, we register to the notifications emitted by the model. 
+In the following method, we make sure that on notifications we invoke the trace methods just defined. 
+</p>
+<figure><pre><code>MgdRawCardElement &gt;&gt; card: aMgCard
+	card := aMgCard.
+	card announcer when: MgdCardFlippedAnnouncement send: #onFlipped to: self.
+	card announcer when: MgdCardDisappearAnnouncement send: #onDisappear to: self</code></pre><figcaption></figcaption></figure>
+
+<p>
+<a id="figBoardEventTraced"></a>
+<figure>
+	<img src="figures/EventTraced.png" width="100%" id="figBoardEventTraced" alt="Tracing registration to the domain notifications."/>
+	<figcaption>Tracing registration to the domain notifications.</figcaption>
+</figure>
+</p>
+<p>
+Now when you click on a card, you can see the trace in the Transcript but you do not see the changes. This is because we should notify 
+the graphics engine that one element should be redrawn. 
+</p>
+
+<figure><pre><code>MgdRawCardElement &gt;&gt; onFlipped
+	Transcript show: 'On flipped'; cr.
+	self invalidate</code></pre><figcaption></figcaption></figure>
+
+<h3>Handling disappear</h3>
+
+<p>
+There are two ways to implement the disappearance of a card:
+Either setting the opacity of the element to 0
+(Note that the element is still present and receives events.),
+</p>
+<figure><pre><code>MgdRawCardElement &gt;&gt; onDisappear
+	Transcript show: 'On disappear'; cr.
+	self opacity: 0</code></pre><figcaption></figcaption></figure>
+
+<p>
+Or changing the visibility as follows:
+</p>
+<figure><pre><code>MgdRawCardElement &gt;&gt; onDisappear
+	Transcript show: 'On disappear'; cr.
+	self visibility: BlVisibility hidden</code></pre><figcaption></figcaption></figure>
+<p>
+	
+Note that in the latter case the element no longer receives events.
+It is used for layout. 
+</p>
+<p>
+<a id="figBoardMissedPair"></a>
+<figure>
+	<img src="figures/BoardMissedPair.png" width="50%" id="figBoardMissedPair" alt="Selecting two cards that are not in pair."/>
+	<figcaption>Selecting two cards that are not in pair.</figcaption>
+</figure>
+</p><h3>Refreshing on missed pair</h3>
+
+<p>
+When the player selects two cards that are not a pair, we present the two cards as shown in Figure <a href="#figBoardMissedPair"></a>.
+Now the clicking on another card will flip back the previous cards. 
+</p>
+<p>
+Remember, a card will raise a notification when flipped in either direction. 
+</p>
+<figure><pre><code>MgdCardModel &gt;&gt; flip
+	flipped := aBoolean.
+	self notifyFlipped</code></pre><figcaption></figcaption></figure>
+
+<p>
+In the method <code>#resetStep</code> we see that all the previous cards are flipped (toggled).
+</p>
+<figure><pre><code>MgdGameModel &gt;&gt; resetStep
+	| lastCard |
+
+	lastCard := self chosenCards  last.
+
+	self chosenCards 
+		allButLastDo: [ :aCard | aCard flip ];
+		removeAll;
+		add: lastCard</code></pre><figcaption></figcaption></figure>
+<p>
+		
+</p>
+<p>
+<a id="figBoardMissedPair"></a>
+<figure>
+	<img src="figures/BoardMissedPair.png" width="60%" id="figBoardMissedPair" alt="Selecting two cards that are not a pair."/>
+	<figcaption>Selecting two cards that are not a pair.</figcaption>
+</figure>
+</p>
+
+<h3>Conclusion</h3>
+
+<p>
+At this stage you are done for the simple interaction. Future versions of this document will explain how to add animations.
+</p>
+
+
+
+
+
+  </section>
+
+</article>
+
+<footer>
+
+<div class="footline">
+    <div class="github-link">
+      <a href="" target="blank"><i class="fa fa-code-fork"></i>Github</a>
+    </div>
+  </div>
+</footer>
+
+<script src="/_support/html/js/clipboard.min.js"></script>
+
+<link href="/_support/html/css/featherlight.min.css" rel="stylesheet">
+<script src="/_support/html/js/featherlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script src="/_support/html/js/flex.js"></script>
+<!-- Prettify annotated paragraphs-->
+    <script src="/_support/html/js/annotated-paragraphs.js"></script>
+
+  </body>
+</html>

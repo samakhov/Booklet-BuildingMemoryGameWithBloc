@@ -1,0 +1,1570 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pharo Book</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+<link href="/_support/html/css/font-awesome.min.css" rel="stylesheet">
+<link href="/_support/html/css/nucleus.css" rel="stylesheet">
+<link href="/_support/html/css/flex.css" rel="stylesheet">
+<link rel="stylesheet" href="/_support/html/highlightjs/styles/default.css">
+<link rel="stylesheet" href="/_support/html/css/highlight-commands.css">
+<link rel="stylesheet" href="/_support/html/css/bootstrap.min.css">
+<script src="/_support/html/js/jquery-2.x.min.js"></script>
+<script src="/_support/html/highlightjs/highlight.pack.js"></script>
+<script src="/_support/html/js/highlight-commands.js"></script>
+<meta name="description" content="">
+<meta name="author" content="Andrei Chiș, Stéphane Ducasse and Aliaksei Syrel">
+  </head>
+  <body>
+    <header>
+  <div class="logo">
+    <a class="baselink" href="/memorygame.html">Pharo Book</a>
+  </div>
+  <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
+  
+</header>
+<article>
+  <aside>
+    <ul class="menu">
+   		<li data-nav-id="123" class="dd-item">
+    		<a href="/memorygame.html">
+		       <i class="fa fa-fw fa-home"></i>
+	    	</a>
+        </li>
+
+		
+		  <li class="dd-item  haschildren ">
+			<div>
+			  <a href="/Chapters/MemoryGameModel.html#objectives of this book">
+					Objectives of this book
+			  </a>
+			   <i class="fa fa-angle-right fa-lg category-icon"></i> 
+			</div>
+			  <ul class="dd-item">
+				
+		   	  	<li class="dd-item ">
+					<div>
+						<a href="/Chapters/MemoryGameModel.html#memory game">
+							Memory game
+						</a>
+						
+					</div>
+
+					<ul class="dd-item">
+					
+					</ul>						
+				</li>
+				
+		   	  	<li class="dd-item ">
+					<div>
+						<a href="/Chapters/MemoryGameModel.html#getting started">
+							Getting started
+						</a>
+						
+					</div>
+
+					<ul class="dd-item">
+					
+					</ul>						
+				</li>
+				
+		   	  	<li class="dd-item ">
+					<div>
+						<a href="/Chapters/MemoryGameModel.html#loading the memory game">
+							Loading the Memory Game
+						</a>
+						
+					</div>
+
+					<ul class="dd-item">
+					
+					</ul>						
+				</li>
+				
+			  </ul>
+		  
+		  </li>
+		
+		  <li class="dd-item  haschildren ">
+			<div>
+			  <a href="/Chapters/MemoryGameModel.html#game model insights">
+					Game model insights
+			  </a>
+			   <i class="fa fa-angle-right fa-lg category-icon"></i> 
+			</div>
+			  <ul class="dd-item">
+				
+		   	  	<li class="dd-item ">
+					<div>
+						<a href="/Chapters/MemoryGameModel.html#reviewing the card model">
+							Reviewing the card model
+						</a>
+						
+					</div>
+
+					<ul class="dd-item">
+					
+					</ul>						
+				</li>
+				
+		   	  	<li class="dd-item ">
+					<div>
+						<a href="/Chapters/MemoryGameModel.html#card simple operations">
+							Card simple operations
+						</a>
+						
+					</div>
+
+					<ul class="dd-item">
+					
+					</ul>						
+				</li>
+				
+		   	  	<li class="dd-item ">
+					<div>
+						<a href="/Chapters/MemoryGameModel.html#adding notification">
+							Adding notification
+						</a>
+						
+					</div>
+
+					<ul class="dd-item">
+					
+					</ul>						
+				</li>
+				
+		   	  	<li class="dd-item ">
+					<div>
+						<a href="/Chapters/MemoryGameModel.html#reviewing the game model">
+							Reviewing the game model
+						</a>
+						
+					</div>
+
+					<ul class="dd-item">
+					
+					</ul>						
+				</li>
+				
+		   	  	<li class="dd-item ">
+					<div>
+						<a href="/Chapters/MemoryGameModel.html#grid size and card number">
+							Grid size and card number
+						</a>
+						
+					</div>
+
+					<ul class="dd-item">
+					
+					</ul>						
+				</li>
+				
+		   	  	<li class="dd-item ">
+					<div>
+						<a href="/Chapters/MemoryGameModel.html#initialization">
+							Initialization
+						</a>
+						
+					</div>
+
+					<ul class="dd-item">
+					
+					</ul>						
+				</li>
+				
+		   	  	<li class="dd-item ">
+					<div>
+						<a href="/Chapters/MemoryGameModel.html#game logic">
+							Game logic
+						</a>
+						
+					</div>
+
+					<ul class="dd-item">
+					
+					</ul>						
+				</li>
+				
+		   	  	<li class="dd-item ">
+					<div>
+						<a href="/Chapters/MemoryGameModel.html#ready ">
+							Ready 
+						</a>
+						
+					</div>
+
+					<ul class="dd-item">
+					
+					</ul>						
+				</li>
+				
+			  </ul>
+		  
+		  </li>
+		
+		  <li class="dd-item  haschildren ">
+			<div>
+			  <a href="/Chapters/BuildingUI.html#building card graphical elements">
+					Building card graphical elements
+			  </a>
+			   <i class="fa fa-angle-right fa-lg category-icon"></i> 
+			</div>
+			  <ul class="dd-item">
+				
+		   	  	<li class="dd-item ">
+					<div>
+						<a href="/Chapters/BuildingUI.html#first: the card element">
+							First: the card element
+						</a>
+						
+					</div>
+
+					<ul class="dd-item">
+					
+					</ul>						
+				</li>
+				
+		   	  	<li class="dd-item ">
+					<div>
+						<a href="/Chapters/BuildingUI.html#starting to draw a card">
+							Starting to draw a card
+						</a>
+						
+					</div>
+
+					<ul class="dd-item">
+					
+					</ul>						
+				</li>
+				
+		   	  	<li class="dd-item ">
+					<div>
+						<a href="/Chapters/BuildingUI.html#improving the card visual ">
+							Improving the card visual 
+						</a>
+						
+					</div>
+
+					<ul class="dd-item">
+					
+					</ul>						
+				</li>
+				
+		   	  	<li class="dd-item ">
+					<div>
+						<a href="/Chapters/BuildingUI.html#preparing flipping">
+							Preparing flipping
+						</a>
+						
+					</div>
+
+					<ul class="dd-item">
+					
+					</ul>						
+				</li>
+				
+		   	  	<li class="dd-item ">
+					<div>
+						<a href="/Chapters/BuildingUI.html#adding a cross">
+							Adding a cross
+						</a>
+						
+					</div>
+
+					<ul class="dd-item">
+					
+					</ul>						
+				</li>
+				
+		   	  	<li class="dd-item ">
+					<div>
+						<a href="/Chapters/BuildingUI.html#full cross">
+							Full cross
+						</a>
+						
+					</div>
+
+					<ul class="dd-item">
+					
+					</ul>						
+				</li>
+				
+		   	  	<li class="dd-item ">
+					<div>
+						<a href="/Chapters/BuildingUI.html#flipped side ">
+							Flipped side 
+						</a>
+						
+					</div>
+
+					<ul class="dd-item">
+					
+					</ul>						
+				</li>
+				
+			  </ul>
+		  
+		  </li>
+		
+		  <li class="dd-item  haschildren ">
+			<div>
+			  <a href="/Chapters/BuildingUI.html#adding a board view">
+					Adding a board view
+			  </a>
+			   <i class="fa fa-angle-right fa-lg category-icon"></i> 
+			</div>
+			  <ul class="dd-item">
+				
+		   	  	<li class="dd-item ">
+					<div>
+						<a href="/Chapters/BuildingUI.html#the gameelement class">
+							The GameElement class
+						</a>
+						
+					</div>
+
+					<ul class="dd-item">
+					
+					</ul>						
+				</li>
+				
+		   	  	<li class="dd-item ">
+					<div>
+						<a href="/Chapters/BuildingUI.html#creating cards">
+							Creating cards
+						</a>
+						
+					</div>
+
+					<ul class="dd-item">
+					
+					</ul>						
+				</li>
+				
+		   	  	<li class="dd-item ">
+					<div>
+						<a href="/Chapters/BuildingUI.html#updating the container to its children">
+							Updating the container to its children
+						</a>
+						
+					</div>
+
+					<ul class="dd-item">
+					
+					</ul>						
+				</li>
+				
+		   	  	<li class="dd-item ">
+					<div>
+						<a href="/Chapters/BuildingUI.html#getting all the children displayed">
+							Getting all the children displayed
+						</a>
+						
+					</div>
+
+					<ul class="dd-item">
+					
+					</ul>						
+				</li>
+				
+		   	  	<li class="dd-item ">
+					<div>
+						<a href="/Chapters/BuildingUI.html#separating cards">
+							Separating cards
+						</a>
+						
+					</div>
+
+					<ul class="dd-item">
+					
+					</ul>						
+				</li>
+				
+			  </ul>
+		  
+		  </li>
+		
+		  <li class="dd-item  haschildren ">
+			<div>
+			  <a href="/Chapters/AddingInteraction.html#adding interaction">
+					Adding Interaction
+			  </a>
+			   <i class="fa fa-angle-right fa-lg category-icon"></i> 
+			</div>
+			  <ul class="dd-item">
+				
+		   	  	<li class="dd-item ">
+					<div>
+						<a href="/Chapters/AddingInteraction.html#an event listener">
+							An event listener
+						</a>
+						
+					</div>
+
+					<ul class="dd-item">
+					
+					</ul>						
+				</li>
+				
+		   	  	<li class="dd-item ">
+					<div>
+						<a href="/Chapters/AddingInteraction.html#adding event listeners">
+							Adding event listeners
+						</a>
+						
+					</div>
+
+					<ul class="dd-item">
+					
+					</ul>						
+				</li>
+				
+		   	  	<li class="dd-item ">
+					<div>
+						<a href="/Chapters/AddingInteraction.html#specialize clickevent:">
+							Specialize clickEvent:
+						</a>
+						
+					</div>
+
+					<ul class="dd-item">
+					
+					</ul>						
+				</li>
+				
+		   	  	<li class="dd-item ">
+					<div>
+						<a href="/Chapters/AddingInteraction.html#connecting the model to the ui">
+							Connecting the model to the UI
+						</a>
+						
+					</div>
+
+					<ul class="dd-item">
+					
+					</ul>						
+				</li>
+				
+		   	  	<li class="dd-item ">
+					<div>
+						<a href="/Chapters/AddingInteraction.html#handling disappear">
+							Handling disappear
+						</a>
+						
+					</div>
+
+					<ul class="dd-item">
+					
+					</ul>						
+				</li>
+				
+		   	  	<li class="dd-item ">
+					<div>
+						<a href="/Chapters/AddingInteraction.html#refreshing on missed pair">
+							Refreshing on missed pair
+						</a>
+						
+					</div>
+
+					<ul class="dd-item">
+					
+					</ul>						
+				</li>
+				
+		   	  	<li class="dd-item ">
+					<div>
+						<a href="/Chapters/AddingInteraction.html#conclusion">
+							Conclusion
+						</a>
+						
+					</div>
+
+					<ul class="dd-item">
+					
+					</ul>						
+				</li>
+				
+			  </ul>
+		  
+		  </li>
+		
+    </ul>
+  </aside>
+
+  <section class="page">
+    
+	<h1>Building a memory game with Bloc</h1>
+		
+	
+
+<h2>Objectives of this book</h2>
+
+<p>
+Now that Bloc's design is stabilizing, this book presents its first tutorial.
+Future changes should mostly be minor (e.g. method renaming).
+</p>
+<p>
+In this tutorial you will build a memory game. Given a provided model of a game, we will focus on creating a UI for it.
+</p>
+
+<h3>Memory game</h3>
+
+<p>
+Let us have a look at what we want to build with you: a simple Memory game. 
+In a memory game, players need to find pairs of similar cards. In each round 
+a player turns over two cards at a time. If the two cards show the same symbol 
+they are removed and the player gets a point. If not, they are both returned facedown. 
+</p>
+<p>
+For example, Figure <a href="#figmemoryExample0"></a> shows the game after the first selection 
+of two cards. Facedown cards are represented with a cross and turned cards show their number. Figure <a href="#figmemoryExample1"></a> shows the same game after a few 
+rounds. While this game can be played by multiple players, in this tutorial we will 
+build a game with just one player. 
+</p>
+<p>
+<a id="figmemoryExample0"></a>
+<figure>
+	<img src="Chapters/figures/memoryExample0.png" width="60%" id="figmemoryExample0" alt="The game after the player has selected two cards: facedown cards are represented with a cross and turned cards with their number."/>
+	<figcaption>The game after the player has selected two cards: facedown cards are represented with a cross and turned cards with their number.</figcaption>
+</figure>
+</p>
+<p>
+Our goal is to have a functional game with a model and simple graphical user interface. <u>In the end</u>, the following code should be able to build, initialize and launch the game:
+</p>
+<figure><pre><code>game := MgdGameModel new initializeForSymbols: '12345678'.
+grid := MgdGameElement new.
+grid memoryGame: game.	
+
+space := BlSpace new. 
+space extent: 420@420.
+space root addChild: grid.
+space show </code></pre><figcaption></figcaption></figure>
+
+<ul>
+<li>First, we create a game model and ask to associate the numbers from 1 to 8 with the cards. By default, a game model has a size of 4 by 4, which fits eight pairs of numbered cards.</li>
+<li>Second, we create a graphical game element.</li>
+<li>Third, we assign the model of the game to the UI. </li>
+<li>Finally, we create and display a graphical space in which we place the game UI. </li>
+</ul>
+<p>
+ 
+ 
+<a id="figmemoryExample1"></a>
+<figure>
+	<img src="Chapters/figures/memoryExample1.png" width="60%" id="figmemoryExample1" alt="Another state of the memory game after the player has correctly matched two pairs."/>
+	<figcaption>Another state of the memory game after the player has correctly matched two pairs.</figcaption>
+</figure>
+</p>
+<h3>Getting started</h3>
+
+<p>
+This tutorial is for Pharo 6.1 (<code>https://pharo.org/download</code>) running on the latest compatible Virtual machine.
+You can get them at the following address:
+</p>
+<figure><pre><code>http://get.pharo.org/61+vm</code></pre><figcaption></figcaption></figure>
+
+<p>
+Alternatively, you can download them by executing the line below on a Linux or MacOS system:
+</p>
+<figure><pre><code>wget -O- get.pharo.org/61+vm | bash</code></pre><figcaption></figcaption></figure>
+
+<p>
+To load Bloc, execute the following snippet in a Pharo Playground:
+</p>
+<figure><pre><code>Metacello new
+   baseline: 'Bloc';
+   repository: 'github://pharo-graphics/Bloc:pharo6.1/src';
+   load: #core</code></pre><figcaption></figcaption></figure>
+
+<h3>Loading the Memory Game</h3>
+
+<p>
+To make the demo easier to follow and help you if you get lost, we already made a full implementation of the game. You can load it using the following code:
+</p>
+<figure><pre><code>Metacello new
+    baseline: 'BlocTutorials';
+    repository: 'github://pharo-graphics/Tutorials/src';
+    load</code></pre><figcaption></figcaption></figure>
+
+<p>
+After you have loaded the BlocTutorials project, you will get two new packages: <code>Bloc-MemoryGame</code> and <code>Bloc-MemoryGame-Demo</code>. <code>Bloc-MemoryGame</code> contains the full implementation of the game. Just browse to the class side of <code>MgExamples</code> and click on the green triangle next to the <code>open</code> method to start the game. <code>Bloc-MemoryGame-Demo</code> contains a skeleton of the game that we will use in this tutorial.
+</p>
+
+<h2>Game model insights</h2>
+<p>
+Before starting with the actual graphical elements, we first need a model for our game.
+This game model will be used as the Model in the typical Model View architecture.
+On the one hand, the model does not communicate directly with the graphical elements;
+all communication is done via announcements. On the other hand, the graphic elements are 
+communicating directly with the model.
+</p>
+<p>
+In the remainder of this chapter we describe the game model in detail. If you want to move directly to
+building graphical elements using Bloc, you can find this model in the package <code>Bloc-MemoryGame-Demo</code>.
+</p>
+
+<h3>Reviewing the card model</h3>
+
+<p>
+Let us start with the card model: a card is an object holding a symbol to be displayed, a state representing whether it is flipped or not, and an announcer to emit state changes. This object could also be a subclass of Model which already provides announcer management. 
+</p>
+<figure><pre><code>Object subclass: #MgdCardModel
+	instanceVariableNames: 'symbol flipped announcer'
+	classVariableNames: ''
+	package: 'Bloc-MemoryGame-Demo-Model'</code></pre><figcaption></figcaption></figure>
+
+
+<p>
+After creating the class we add an <code>initialize</code> method to set the card as not flipped, together with several accessors:
+</p>
+<figure><pre><code>MgdCardModel &gt;&gt; initialize
+	super initialize.
+	flipped := false</code></pre><figcaption></figcaption></figure>
+<figure><pre><code>MgdCardModel &gt;&gt; symbol: aCharacter
+	symbol := aCharacter</code></pre><figcaption></figcaption></figure>
+<figure><pre><code>MgdCardModel &gt;&gt; symbol
+	^ symbol</code></pre><figcaption></figcaption></figure>
+<figure><pre><code>MgdCardModel &gt;&gt; isFlipped
+	^ flipped</code></pre><figcaption></figcaption></figure>
+<figure><pre><code>MgdCardModel &gt;&gt;	announcer
+	^ announcer ifNil: [ announcer := Announcer new ]</code></pre><figcaption></figcaption></figure>
+
+<h3>Card simple operations</h3>
+
+<p>
+Next we need two API methods to flip a card and make it disappear when it is no longer needed in the game.
+</p>
+<figure><pre><code>MgdCardModel &gt;&gt; flip
+	flipped := flipped not.
+	self notifyFlipped</code></pre><figcaption></figcaption></figure>
+
+<figure><pre><code>MgdCardModel &gt;&gt; disappear
+	self notifyDisappear</code></pre><figcaption></figcaption></figure>
+
+<h3>Adding notification</h3>
+<p>
+The notification is implemented as follows in the <code>notifyFlipped</code> and <code>notifyDisappear</code> methods. 
+They simply announce events of type <code>MgdCardFlippedAnnouncement</code> and <code>MgdCardDisappearAnnouncement</code>. 
+The graphical elements will have to register subscriptions to these announcements as we will see later.
+</p>
+<figure><pre><code>MgdCardModel &gt;&gt; notifyFlipped
+	self announcer announce: MgdCardFlippedAnnouncement new</code></pre><figcaption></figcaption></figure>
+
+<figure><pre><code>MgdCardModel &gt;&gt; notifyDisappear
+	self announcer announce: MgdCardDisappearAnnouncement new</code></pre><figcaption></figcaption></figure>
+
+<p>
+Here, <code>MgdCardFlippedAnnouncement</code> and <code>MgdCardDisappearAnnouncement</code> are subclasses of <code>Announcement</code>.
+</p>
+<figure><pre><code>Announcement subclass: #MgdCardFlippedAnnouncement
+	instanceVariableNames: ''
+	classVariableNames: ''
+	package: 'Bloc-MemoryGame-Demo-Events'</code></pre><figcaption></figcaption></figure>
+
+<figure><pre><code>Announcement subclass: #MgdCardDisappearAnnouncement
+	instanceVariableNames: ''
+	classVariableNames: ''
+	package: 'Bloc-MemoryGame-Demo-Events'</code></pre><figcaption></figcaption></figure>
+
+<p>
+We add one final method to print a card in a nicer way and we are done with the card model!
+</p>
+<figure><pre><code>MgdCardModel &gt;&gt; printOn: aStream
+	aStream
+		nextPutAll: 'Card';
+		nextPut: Character space;
+		nextPut: $(;
+		nextPut: self symbol;
+		nextPut: $)</code></pre><figcaption></figcaption></figure>
+
+<h3>Reviewing the game model</h3>
+
+<p>
+The game model is simple: it keeps track of all the available cards and all the cards currently selected by the player. 
+</p>
+<figure><pre><code>Object subclass: #MgdGameModel
+	instanceVariableNames: 'availableCards chosenCards'
+	classVariableNames: ''
+	package: 'Bloc-MemoryGame-Demo-Model'</code></pre><figcaption></figcaption></figure>
+
+<p>
+The <code>initialize</code> method sets up two collections for the cards.
+</p><figure><pre><code>MgdGameModel &gt;&gt; initialize
+	super initialize.
+	availableCards := OrderedCollection new.
+	chosenCards := OrderedCollection new</code></pre><figcaption></figcaption></figure>
+<figure><pre><code>MgdGameModel &gt;&gt; availableCards
+	^ availableCards</code></pre><figcaption></figcaption></figure>
+<figure><pre><code>MgdGameModel &gt;&gt; chosenCards
+	^ chosenCards</code></pre><figcaption></figcaption></figure>
+
+<h3>Grid size and card number</h3>
+<p>
+For now, we'll hardcode the size of the grid and the number of cards that need to be matched by a player.
+</p><figure><pre><code>MgdGameModel &gt;&gt; gridSize
+	&quot;Return grid size, total amount of cards is gridSize^2&quot;
+	^ 4</code></pre><figcaption></figcaption></figure>
+<figure><pre><code>MgdGameModel &gt;&gt; matchesCount
+	&quot;How many chosen cards should match in order for them to disappear&quot;
+	^ 2</code></pre><figcaption></figcaption></figure>
+<figure><pre><code>MgdGameModel &gt;&gt; cardsCount
+	&quot;Return how many cards there should be depending on grid size&quot;
+	^ self gridSize * self gridSize</code></pre><figcaption></figcaption></figure>
+
+
+<h3>Initialization</h3>
+<p>
+To initialize the game with cards, we add an <code>initializeForSymbols:</code> method. 
+This method creates a list of cards from a list of characters and shuffles it. 
+We also add an assertion in this method to verify that the caller provided enough characters.
+</p>
+<figure><pre><code>MgdGameModel &gt;&gt; initializeForSymbols: characters
+
+	self
+		assert: [ characters size = (self cardsCount / self matchesCount) ]
+		description: [ 'Amount of characters must be equal to possible all combinations' ].
+	availableCards := (characters asArray collect: [ :aSymbol | 
+		(1 to: self matchesCount) collect: [ :i |
+			 MgdCardModel new symbol: aSymbol ] ]) 
+			    flattened shuffled asOrderedCollection</code></pre><figcaption></figcaption></figure>
+
+<h3>Game logic</h3>
+<p>
+Next, we need <code>chooseCard:</code>, a method that will be called when a user selects a card. 
+This method is actually the most complex method of the model and implements the main
+logic of the game. First, the method makes sure that the chosen card is not already selected.
+This could happen if the view uses animations that gives the player the chance to click on a card more then once.
+Next, the card is flipped by sending it the message <code>flip</code>. 
+Finally, depending on the actual state of the game, the step is complete and the selected cards are either removed or flipped back.
+</p>
+<figure><pre><code>MgdGameModel &gt;&gt; chooseCard: aCard
+	(self chosenCards includes: aCard) 
+		ifTrue: [ ^ self ].
+	self chosenCards add: aCard.
+	aCard flip.
+	self shouldCompleteStep
+		ifTrue: [ ^ self completeStep ].
+	self shouldResetStep
+		ifTrue: [ self resetStep ]</code></pre><figcaption></figcaption></figure>
+
+<p>
+The current step is completed if the player selected the right amount of cards and they all show the same symbol.
+In this case, all selected cards receive the message <code>disappear</code> and are removed from the list of selected cards.
+</p>
+<figure><pre><code>MgdGameModel &gt;&gt; shouldCompleteStep
+	^ self chosenCards size = self matchesCount 
+		and: [ self chosenCardMatch ]</code></pre><figcaption></figcaption></figure>
+<figure><pre><code>MgdGameModel &gt;&gt; chosenCardMatch
+	| firstCard |
+	firstCard := self chosenCards first.
+	^ self chosenCards allSatisfy: [ :aCard | 
+		aCard isFlipped and: [ firstCard symbol = aCard symbol ] ]</code></pre><figcaption></figcaption></figure>
+<figure><pre><code>MgdGameModel &gt;&gt;	completeStep
+	self chosenCards 
+		do: [ :aCard | aCard disappear ];
+		removeAll.</code></pre><figcaption></figcaption></figure>
+
+
+<p>
+The current step should be reset if the player selected a third card. This will happen when a player already
+selected two cards that did not match and clicked on a third one. In this situation the two initial cards will be
+flipped back. The list of selected cards will only contain the third card.
+</p>
+<figure><pre><code>MgdGameModel &gt;&gt; shouldResetStep 
+	^ self chosenCards size &gt; self matchesCount</code></pre><figcaption></figcaption></figure>
+<figure><pre><code>MgdGameModel &gt;&gt; resetStep
+	|lastCard|
+	lastCard := self chosenCards  last.
+	self chosenCards 
+		allButLastDo: [ :aCard | aCard flip ];
+		removeAll;
+		add: lastCard</code></pre><figcaption></figcaption></figure>
+
+
+<h3>Ready </h3>
+
+<p>
+We are now ready to start building the game view.
+</p>
+<p>
+Since Bloc is still under development, it may happen that you will get exceptions that cause graphical 
+elements to render incorrectly. In that case, reinitialize the Universe via: 
+</p>
+<figure><pre><code>BlUniverse reset</code></pre><figcaption></figcaption></figure>
+
+<h2>Building card graphical elements</h2>
+
+<p>
+In this chapter we will build the visual appearance of the cards step by step.
+In Bloc, visual objects are called elements, which are usually subclasses of <code>BlElement</code>, the inheritance tree root.
+In subsequent chapters we will do the same for the game and add interaction using event listeners.
+</p>
+<h3>First: the card element</h3>
+
+
+<p>
+Our graphic element representing a card will be a subclass of the <code>BlElement</code> which has a reference to a card model.
+</p>
+<figure><pre><code>BlElement subclass: #MgdRawCardElement
+	instanceVariableNames: 'card'
+	classVariableNames: ''
+	package: 'Bloc-MemoryGame-Demo-Elements'</code></pre><figcaption></figcaption></figure>
+
+<p>
+The message <code>backgroundPaint</code> will be used later to customize the background of our card element.
+Let us define a nice color. 
+</p>
+<figure><pre><code>MgdRawCardElement &gt;&gt; backgroundPaint
+	^ Color lightGray</code></pre><figcaption></figcaption></figure>
+
+<p>
+We mentioned the accessors since the setter will be a place to hook registration for the communication between the model and the view.
+</p>
+<figure><pre><code>MgdRawCardElement &gt;&gt; card
+	^ card</code></pre><figcaption></figcaption></figure>
+
+
+<figure><pre><code>MgdRawCardElement &gt;&gt; card: aMgCard
+	card := aMgCard</code></pre><figcaption></figcaption></figure>
+
+<p>
+We initialize it to get a
+</p><figure><pre><code>MgdRawCardElement &gt;&gt; initialize
+	super initialize.
+	self size: 80 @ 80.
+	self card: (MgdCardModel new symbol: $a)</code></pre><figcaption></figcaption></figure>
+
+<h3>Starting to draw a card</h3>
+
+<p>
+To define the visual properties of a graphic element we redefine the method <code>drawOnSpartaCanvas:</code>.
+</p>
+<figure><pre><code>MgdRawCardElement &gt;&gt; drawOnSpartaCanvas: aCanvas
+	aCanvas fill 
+		paint: self backgroundPaint;
+		path: self boundsInLocal;
+		draw</code></pre><figcaption></figcaption></figure>
+
+<p>
+Note, that if we forget to send the message <code>draw</code> the canvas will be set but it will not display the result. 
+</p>
+<p>
+Now to see the result in Morphic we can inspect our card element in Playground (<code>CMD+g</code>) and switch to <code>Live</code> presentation as shown in Figure <a href="#figInspecting0"></a>:
+</p><figure><pre><code>MgdRawCardElement new</code></pre><figcaption></figcaption></figure>
+
+<p>
+<a id="figInspecting0"></a>
+<figure>
+	<img src="Chapters/figures/Inspecting0.png" width="60%" id="figInspecting0" alt="A first extremely basic representation of face down card."/>
+	<figcaption>A first extremely basic representation of face down card.</figcaption>
+</figure>
+</p>
+<h3>Improving the card visual </h3>
+
+<p>
+Instead of displaying a full rectangle, we want a better visual. 
+<code>Sparta</code> canvas offers a shape factory. This shape factory returns shape path (lines, rectangle, ellipse, circle...) that can be passed to the canvas using the message <code>path:</code>. Other shapes can be easily added. 
+</p>
+<p>
+For example with the following expression <code>path: (aCanvas shape ellipse: self boundsInLocal)</code> we now draw a circle since the bounds of the receiver returns a square of 80. Result is shown in Figure <a href="#figCardCircle"></a>:
+</p>
+<figure><pre><code>MgdRawCardElement &gt;&gt; drawOnSpartaCanvas: aCanvas
+	aCanvas fill 
+		paint: self backgroundPaint;
+		path: (aCanvas shape ellipse: self boundsInLocal);
+		draw</code></pre><figcaption></figcaption></figure>
+
+<p>
+<a id="figCardCircle"></a>
+<figure>
+	<img src="Chapters/figures/CardCircle.png" width="60%" id="figCardCircle" alt="A card with circular background."/>
+	<figcaption>A card with circular background.</figcaption>
+</figure>
+</p>
+<p>
+However, we don't want the card to be a circle either. Ideally it should be a rounded rectangle. So let's first add a helper method that would provide us with a corner radius:
+</p>
+<figure><pre><code>MgdRawCardElement &gt;&gt; cornerRadius
+	^ 12</code></pre><figcaption></figcaption></figure>
+
+<p>
+We would like to have a rounded rectangle so we use the <code>roundedRectangle:radii:</code> factory message. However, this time, instead of just directly drawing a rounded rectangle we will fill the whole card as we did on the first step with <code>background paint</code> and then simply <code>clip</code> everything by rounded a rectangle:
+</p>
+<figure><pre><code>MgdRawCardElement &gt;&gt; drawOnSpartaCanvas: aCanvas
+	| roundedRectangle |
+	
+	roundedRectangle := aCanvas shape 
+		roundedRectangle: self boundsInLocal 
+		radii: (BlCornerRadii radius: self cornerRadius).
+
+	aCanvas clip
+		by: roundedRectangle
+		during: [
+			aCanvas fill
+				paint: self backgroundPaint;
+				path: self boundsInLocal;
+				draw. ]</code></pre><figcaption></figcaption></figure>
+
+<p>
+You should get then a visual representation close to the one shown in Figure <a href="#figrounded"></a>.
+</p>
+
+<p>
+<a id="figrounded"></a>
+<figure>
+	<img src="Chapters/figures/CardRounded.png" width="60%" id="figrounded" alt="A rounded card."/>
+	<figcaption>A rounded card.</figcaption>
+</figure>
+</p>
+
+
+<h3>Preparing flipping</h3>
+
+<p>
+We define now two methods 
+</p>
+<figure><pre><code>MgdRawCardElement &gt;&gt; drawBacksideOn: aCanvas
+	&quot;nothing for now&quot;</code></pre><figcaption></figcaption></figure>
+
+<figure><pre><code>MgdRawCardElement &gt;&gt; drawFlippedSideOn: aCanvas
+	&quot;nothing for now&quot;</code></pre><figcaption></figcaption></figure>
+
+<p>
+And we refactor <code>drawOnSpartaCanvas:</code> as follows: 
+</p>
+<figure><pre><code>MgdRawCardElement &gt;&gt; drawOnSpartaCanvas: aCanvas
+	| roundedRectangle |
+	
+	roundedRectangle := aCanvas shape 
+		roundedRectangle: self boundsInLocal 
+		radii: (BlCornerRadii radius: self cornerRadius).
+
+	aCanvas clip
+		by: roundedRectangle
+		during: [
+			aCanvas fill
+				paint: self backgroundPaint;
+				path: self boundsInLocal;
+				draw.
+				
+			self card isFlipped
+				ifTrue: [ self drawFlippedSideOn: aCanvas ]
+				ifFalse: [ self drawBacksideOn: aCanvas ] ]</code></pre><figcaption></figcaption></figure>
+
+<p>
+we extract the common part into a separate method. 
+</p><figure><pre><code>MgdRawCardElement &gt;&gt; drawCommonOn: aCanvas
+	aCanvas fill
+		paint: self backgroundPaint;
+		path: self boundsInLocal;
+		draw</code></pre><figcaption></figcaption></figure>
+
+<p>
+Finally, <code>drawOnSpartaCanvas:</code> logic is at the same conceptual level. 
+</p>
+<figure><pre><code>MgdRawCardElement &gt;&gt; drawOnSpartaCanvas: aCanvas
+	| roundedRectangle |
+	
+	roundedRectangle := aCanvas shape 
+		roundedRectangle: self boundsInLocal 
+		radii: (BlCornerRadii radius: self cornerRadius).
+
+	aCanvas clip
+		by: roundedRectangle
+		during: [
+			self drawCommonOn: aCanvas.
+			self card isFlipped
+				ifTrue: [ self drawFlippedSideOn: aCanvas ]
+				ifFalse: [ self drawBacksideOn: aCanvas ] ]</code></pre><figcaption></figcaption></figure>
+
+<p>
+Now we are ready to implement the backside and flipped side
+</p>
+<h3>Adding a cross</h3>
+
+<p>
+Now we are ready to define the backside of our card. We will start by drawing a line. To draw a line we should provide it as a path. In Bloc this can be done by either passing a Path object or by asking the canvas for its shape factory. 
+The shape factory encapsulates the logic of shapes. This is what we do below with the expression <code>path: (aCanvas shape line: 0 @ 0 to: self extent)</code>. The message <code>shape</code> returns a ShapeFactory and we ask this factory to produce a line path. 
+</p>
+<figure><pre><code>MgdRawCardElement &gt;&gt; drawBacksideOn: aCanvas
+	aCanvas stroke
+		paint: Color paleBlue;
+		path: (aCanvas shape line: 0@0 to: self extent);
+		draw.</code></pre><figcaption></figcaption></figure>
+
+
+<p>
+Once this method is defined, refresh the inspector and you should get a card as in Figure <a href="#figOneLIne"></a>.
+</p>
+<p>
+<a id="figOneLIne"></a>
+<figure>
+	<img src="Chapters/figures/CardOneLine.png" width="60%" id="figOneLIne" alt="A rounded card with half of the cross."/>
+	<figcaption>A rounded card with half of the cross.</figcaption>
+</figure>
+</p>
+<h3>Full cross</h3>
+
+<p>
+Now we can add the second line to build a full cross. Our solution is defined as follows: 
+</p>
+<figure><pre><code>MgdRawCardElement &gt;&gt; drawBacksideOn: aCanvas
+	aCanvas stroke
+		paint: Color paleBlue;
+		path: (aCanvas shape line: 0@0 to: self extent);
+		draw.
+
+	aCanvas stroke
+		paint: Color paleBlue;
+		path: (aCanvas shape line: self width @ 0 to: 0@self height);
+		draw</code></pre><figcaption></figcaption></figure>
+
+
+<p>
+<a id="figCardCross"></a>
+<figure>
+	<img src="Chapters/figures/CardCross.png" width="60%" id="figCardCross" alt="A card with a complete backside."/>
+	<figcaption>A card with a complete backside.</figcaption>
+</figure>
+</p>
+<p>
+Now our backside is fully implemented and when you refresh your view, you should get the card 
+as shown in Figure <a href="#figCardCross"></a>. 
+</p>
+
+<h3>Flipped side </h3>
+<p>
+Now we are ready to develop the flipped side of the card. To see if we should change the card model you can use the inspector to get the cardElement and send it the message <code>card flip</code> or directly 
+recreate a new card  as follows: 
+</p>
+<figure><pre><code>| cardElement | 
+cardElement := MgdRawCardElement new.
+cardElement card flip.
+cardElement</code></pre><figcaption></figcaption></figure>
+
+<p>
+You should get an inspector in the situation shown in Figure <a href="#figCardForFlip"></a>.
+Now we are ready to implement the flipped side. 
+</p>
+<p>
+<a id="figCardForFlip"></a>
+<figure>
+	<img src="Chapters/figures/CardForFlip.png" width="60%" id="figCardForFlip" alt="A flipped card without any visuals."/>
+	<figcaption>A flipped card without any visuals.</figcaption>
+</figure>
+</p>
+<p>
+Let us redefine <code>drawFlippedSideOn:</code> as follows: 
+</p><ul>
+<li>First we ask the canvas to build a font of size 50. Note that for the font we specify a FreeType font (pay attention that strike fonts do not work and will never work in Bloc - in fact they will be removed once Pharo is based on Bloc).</li>
+<li>Then we ask the canvas to draw a text using the font with the color we want. </li>
+</ul>
+<p>
+We should not forget to send the message <code>draw</code> to the canvas. 
+</p>
+<figure><pre><code>MgdRawCardElement &gt;&gt; drawFlippedSideOn: aCanvas
+	| font |
+	font := aCanvas font
+		named: 'Source Sans Pro';
+		size: 50;
+		build.
+	aCanvas text
+		font: font;
+		paint: Color white;
+		string: self card symbol asString;
+		draw</code></pre><figcaption></figcaption></figure>
+
+<p>
+When we refresh the display we do not see the symbol and this is a problem. 
+If you pay attention you will see that there is just one line that is drawn on the top left of the card. 
+You can change the color to red to see it on the card. 
+We are drawing the string in the corner and outside the rounded rectangle. 
+Let us fix that issue by defining the baseline from which the text should be displayed.
+</p>
+<figure><pre><code>MgdRawCardElement &gt;&gt; drawFlippedSideOn: aCanvas
+	| font origin |
+	font := aCanvas font
+		named: 'Source Sans Pro';
+		size: 50;
+		build.
+	origin := self extent / 2.0.
+	aCanvas text
+		baseline: origin;
+		font: font;
+		paint: Color white;
+		string: self card symbol asString;
+		draw</code></pre><figcaption></figcaption></figure>
+
+<p>
+When you refresh the inspector you should see the card symbol but not centered as shown in Figure <a href="#figCardNotCentered"></a>.
+</p>
+
+<p>
+<a id="figCardNotCentered"></a>
+<figure>
+	<img src="Chapters/figures/CardNotCentered.png" width="60%" id="figCardNotCentered" alt="Not centered letter."/>
+	<figcaption>Not centered letter.</figcaption>
+</figure>
+</p>
+<p>
+To center the text well, we have to use exact font metrics. Bloc can support multiple graphical back-end such as Cairo, Moz2D and in the future plain OpenGL. There is one important constraint, that is that font metrics should be measured and manipulated via the same back-end abstraction. 
+For this purpose, the expression <code>aCanvas text</code> returns a text painter and such a text painter provides access to the font measurements.  Using such measurements we can then get access to the text metrics and compute a better center.
+</p>
+<figure><pre><code>MgdRawCardElement &gt;&gt; drawFlippedSideOn: aCanvas
+	| font origin textPainter metrics |
+	font := aCanvas font
+		named: 'Source Sans Pro';
+		size: 50;
+		build.
+
+	textPainter := aCanvas text
+		font: font;
+		paint: Color white;
+		string: self card symbol asString.
+	
+	metrics := textPainter measure. 
+	
+	origin := (self extent - metrics textMetrics bounds extent) / 2.0.
+	textPainter 
+		baseline: origin;
+		draw</code></pre><figcaption></figcaption></figure>
+
+<p>
+With this definition we get the letter centered horizontally but not vertically as shown in Figure <a href="#figCardCenteredHorizontally"></a>. This is because 
+we have to take into account the font size.
+</p>
+<p>
+<a id="figCardCenteredHorizontally"></a>
+<figure>
+	<img src="Chapters/figures/CardCenteredHorizontally.png" width="60%" id="figCardCenteredHorizontally" alt="Horizontally centered letter."/>
+	<figcaption>Horizontally centered letter.</figcaption>
+</figure>
+</p>
+<figure><pre><code>MgdRawCardElement &gt;&gt; drawFlippedSideOn: aCanvas
+	| font origin textPainter metrics |
+	font := aCanvas font
+		named: 'Source Sans Pro';
+		size: 50;
+		build.
+
+	textPainter := aCanvas text
+		font: font;
+		paint: Color white;
+		string: self card symbol asString.
+
+	metrics := textPainter measure. 
+
+	origin := (self extent - metrics textMetrics bounds extent) / 2.0.
+	origin := origin - metrics textMetrics bounds origin.
+	textPainter 
+		baseline: origin;
+		draw</code></pre><figcaption></figcaption></figure>
+
+<p>
+With this definition we get a centered letter as shown in Figure <a href="#figCardCentered"></a>.
+</p>
+<p>
+<a id="figCardCentered"></a>
+<figure>
+	<img src="Chapters/figures/CardCentered.png" width="60%" id="figCardCentered" alt="Centered letter."/>
+	<figcaption>Centered letter.</figcaption>
+</figure>
+</p>
+
+<p>
+Now we are ready to work on the board game.
+</p>
+<h2>Adding a board view</h2>
+<p>
+In the previous chapter, we defined all the card visualization. We are now ready to define the game board visualization.
+Basically we will define a new element subclass and set its layout.
+</p>
+
+<p>
+Here is a typical scenario to create the game: we create a model and its view and we assign the model as the view's model.
+</p>
+<figure><pre><code>game := MgdGameModel numbers.
+grid := MgdGameElement new.
+grid memoryGame: game. </code></pre><figcaption></figcaption></figure>
+
+<h3>The GameElement class</h3>
+<p>
+Let us define the class <code>MgdGameElement</code> that will represent the game board. 
+As for the <code>MgdRawCardElement</code>, it inherits from the <code>BlElement</code> class. 
+This view object holds a reference to the game model.
+</p><figure><pre><code>BlElement subclass: #MgdGameElement
+	instanceVariableNames: 'memoryGame'
+	classVariableNames: ''
+	package: 'Bloc-MemoryGame-Demo-Elements'</code></pre><figcaption></figcaption></figure>
+
+<p>
+We define the <code>memoryGame:</code> setter method. We will extend it to create
+all the card elements shortly. 
+</p>
+<figure><pre><code>MgdGameElement &gt;&gt; memoryGame: aMgdGameModel
+	memoryGame := aMgdGameModel</code></pre><figcaption></figcaption></figure>
+
+<figure><pre><code>MgdGameElement &gt;&gt; memoryGame
+	^ memoryGame</code></pre><figcaption></figcaption></figure>
+
+<p>
+During the object initialization we set the layout (i.e., how sub elements are placed inside their container).
+Here we define the layout to be a grid layout and we set it as horizontal.
+</p><figure><pre><code>MgdGameElement &gt;&gt; initialize
+	super initialize.
+	self layout: BlGridLayout horizontal.</code></pre><figcaption></figcaption></figure>
+
+<h3>Creating cards</h3>
+
+<p>
+When a model is set for a board game, we use the model information to perform the following actions: 
+</p><ul>
+<li>we set the number of columns of the layout</li>
+<li>we create all the card elements paying attention to set their respective model. </li>
+</ul>
+<p>
+Note in particular that we add all the card graphical elements as children of the board game using the message <code>addChild:</code>.
+</p>
+<figure><pre><code>MgdGameElement &gt;&gt; memoryGame: aGameModel
+	memoryGame := aGameModel.
+	
+	memoryGame availableCards
+		do: [ :aCard | self addChild: (self newCardElement card: aCard) ]</code></pre><figcaption></figcaption></figure>
+
+<figure><pre><code>MgdGameElement &gt;&gt; newCardElement
+	^ MgdRawCardElement new</code></pre><figcaption></figcaption></figure>
+
+
+<p>
+<a id="figBoardStarted"></a>
+<figure>
+	<img src="Chapters/figures/BoardStarted.png" width="60%" id="figBoardStarted" alt="A first board - not really working."/>
+	<figcaption>A first board - not really working.</figcaption>
+</figure>
+</p>
+<p>
+When we refresh the inspector we obtain a situation similar to the one of Figure <a href="#figBoardStarted"></a>.
+It shows that only a small part of the game is displayed. This is due to the fact that the game element 
+did not adapt to its children. 
+</p>
+
+<h3>Updating the container to its children</h3>
+
+<p>
+A layout is responsible for the layout of the children of a container but not of the container itself. 
+For this, we should use constraints. 
+</p>
+<figure><pre><code>MgdGameElement &gt;&gt; initialize
+	super initialize.
+	self layout: BlGridLayout horizontal.
+	self
+		constraintsDo: [ :aLayoutConstrants | 
+			aLayoutConstraints horizontal fitContent.
+			aLayoutConstraints vertical fitContent ]</code></pre><figcaption></figcaption></figure>
+
+<p>
+Now when we refresh our view we should get a situation close to the one presented in Figure<a href="#figBoardOneRow"></a>, i.e., having 
+just one row. Indeed we never mentioned to the layout that it should layout its children into a grid, wrapping after four.
+</p>
+<p>
+<a id="figBoardOneRow"></a>
+<figure>
+	<img src="Chapters/figures/BoardOneRow.png" width="60%" id="figBoardOneRow" alt="Displaying a row."/>
+	<figcaption>Displaying a row.</figcaption>
+</figure>
+</p>
+
+<h3>Getting all the children displayed</h3>
+
+<p>
+We modify the <code>memoryGame:</code> method to set the number of columns 
+that the layout should handle. 
+</p>
+<figure><pre><code>MgdGameElement &gt;&gt; memoryGame: aGameModel
+	memoryGame := aGameModel.
+	self layout columnCount: memoryGame gridSize.
+	memoryGame availableCards
+		do: [ :aCard | self addChild: (self newCardElement card: aCard) ]</code></pre><figcaption></figcaption></figure>
+
+<p>
+Once the layout is set with the correct information we obtain a full board as shown in Figure <a href="#figBoardFull"></a>.
+</p>
+<p>
+<a id="figBoardFull"></a>
+<figure>
+	<img src="Chapters/figures/BoardFull.png" width="60%" id="figBoardFull" alt="Displaying a full board."/>
+	<figcaption>Displaying a full board.</figcaption>
+</figure>
+</p>
+
+<h3>Separating cards</h3>
+
+<p>
+To offer a better identification of the cards, we should add some space between each of them. 
+We achieve this by using the message <code>cellSpacing:</code> as shown below. 
+</p>
+<p>
+We take the opportunity to change the background color using the message <code>background:</code>.
+Note that a background is not necessarily a color but that color is polymorphic to a background
+therefore the expression <code>background: Color gray darker</code> is equivalent to <code>background: (BlBackground paint: Color gray darker)</code>.
+</p>
+<figure><pre><code>MgdGameElement &gt;&gt; initialize
+	super initialize.
+	self background: (BlBackground paint: Color gray darker).
+	self layout: (BlGridLayout horizontal cellSpacing: 20).
+	self
+		constraintsDo: [ :aLayoutConstraints | 
+			aLayoutConstraints horizontal fitContent.
+			aLayoutConstraints vertical fitContent ]</code></pre><figcaption></figcaption></figure>
+
+<p>
+Once this method is changed, you should get a situation similar to the one described by Figure <a href="#figBoardFullSpace"></a>.
+<a id="figBoardFullSpace"></a>
+<figure>
+	<img src="Chapters/figures/BoardFullSpace.png" width="60%" id="figBoardFullSpace" alt="Displaying a full board with space."/>
+	<figcaption>Displaying a full board with space.</figcaption>
+</figure>
+</p>
+<p>
+We are now ready for adding interaction to the game. 
+
+</p>
+
+<h2>Adding Interaction</h2>
+
+<p>
+Now we will add interaction to the game. We want to flip the cards by clicking on them. 
+Bloc supports such situations using two mechanisms: on one hand, event listeners handle events
+and on the other hand, the communication between the model and view is managed via the registration to announcements
+sent by the model.
+</p>
+
+<h3>An event listener</h3>
+
+<figure><pre><code>BlElementEventListener subclass: #MgdCardEventListener
+	instanceVariableNames: 'memoryGame'
+	classVariableNames: ''
+	package: 'Bloc-MemoryGame-Demo-Elements'</code></pre><figcaption></figcaption></figure>
+
+<p>
+We add an instance variable <code>memoryGame</code> holding a game model to the listener because 
+we will need to access the model to react to events for example to update the game situation. 
+</p>
+<figure><pre><code>MgdCardEventListener &gt;&gt; memoryGame: aGameModel
+	memoryGame := aGameModel</code></pre><figcaption></figcaption></figure>
+
+<p>
+Let us redefine the <code>clickEvent:</code> method to raise a debugger. It will give us the occasion to introspect the system.
+</p>
+<figure><pre><code>MgdCardEventListener &gt;&gt; clickEvent: anEvent
+	self halt</code></pre><figcaption></figcaption></figure>
+
+
+
+
+<h3>Adding event listeners</h3>
+
+<p>
+Now we should add the card event listener to each card because we want to know which card will be clicked and pass this 
+information to the game model.
+</p>
+
+<figure><pre><code>MgdGameElement &gt;&gt; newCardEventListener
+	^ MgdCardEventListener new</code></pre><figcaption></figcaption></figure>
+
+<p>
+For that we have to extend <code>#memoryGame:</code> model setter in <code>MgdGameElement</code> as follows by adding a card event listener to every card element using <code>#addEventHandler:</code>: 
+</p>
+<figure><pre><code>MgdGameElement &gt;&gt; memoryGame: aMgdGameModel
+	| aCardEventListener |
+	
+	memoryGame := aMgdGameModel.
+	aCardEventListener := self newCardEventListener memoryGame: aMgdGameModel.
+	
+	self layout columnCount: memoryGame gridSize.
+	
+	memoryGame availableCards
+		do: [ :aCard | 
+			| cardElement |
+			cardElement := self newCardElement card: aCard.
+			cardElement addEventHandler: aCardEventListener.
+			self addChild: cardElement ]</code></pre><figcaption></figcaption></figure>
+
+<p>
+Please note, that in our case we can reuse the same event handler for all card elements. It allows us to reduce overall memory consumption and improve game initialisation time.
+</p>
+<p>
+<a id="figBoardFull"></a>
+<figure>
+	<img src="Chapters/figures/ClickWithDebugger.png" width="100%" id="figBoardFull" alt="Debugging the clickEvent: anEvent method."/>
+	<figcaption>Debugging the clickEvent: anEvent method.</figcaption>
+</figure>
+</p>
+
+<p>
+Now the preview is not enough and we should create a window and embed the game element. 
+Then when you click on an card you should get a debugger as shown in Figure <a href="#figBoardFull"></a>.
+</p><figure><pre><code>space := BlSpace new.
+space extent: 420@420.  
+game := MgdGameModel numbers.
+grid := MgdGameElement new.
+grid memoryGame: game. 
+space root addChild: grid.
+space show </code></pre><figcaption></figcaption></figure>
+
+
+<h3>Specialize clickEvent:</h3>
+<p>
+Now we can specialise the <code>clickEvent:</code> method as follows: 
+</p><ul>
+<li>We get the graphical element that receives the mouse click using the message <code>currentTarget</code>. The message <code>currentTarget</code> returns the element that receives an event.</li>
+<li>From this graphical card we access the card model and we pass this card model to the game model. </li>
+</ul>
+
+<figure><pre><code>MgdCardEventListener &gt;&gt; clickEvent: anEvent
+	memoryGame chooseCard: anEvent currentTarget card</code></pre><figcaption></figcaption></figure>
+
+<p>
+It means that the memory game model is changed but we do not see the visual effect of our actions. Indeed this is normal. We never made sure that visual elements are listening to model changes.  This is what we will do in the following chapter. 
+</p>
+
+
+<h3>Connecting the model to the UI</h3>
+<p>
+Now we show how the domain communicates with the user interface: the domain emits notifications
+using announcements but it does not refer to the UI elements. It is the visual elements that should register to the notifications and react accordingly.
+</p>
+
+<p>
+Let us first define two simple methods in the class <code>MgdRawCardElement</code> just producing a trace.
+</p><figure><pre><code>MgdRawCardElement &gt;&gt; onDisappear
+	Transcript show: 'On disappear'; cr</code></pre><figcaption></figcaption></figure>
+
+<figure><pre><code>MgdRawCardElement &gt;&gt; onFlipped
+	Transcript show: 'On flipped'; cr</code></pre><figcaption></figcaption></figure>
+
+<p>
+Now we can modify the setter so that when a card model is set to a card graphical element, we register to the notifications emitted by the model. 
+In the following method, we make sure that on notifications we invoke the trace methods just defined. 
+</p>
+<figure><pre><code>MgdRawCardElement &gt;&gt; card: aMgCard
+	card := aMgCard.
+	card announcer when: MgdCardFlippedAnnouncement send: #onFlipped to: self.
+	card announcer when: MgdCardDisappearAnnouncement send: #onDisappear to: self</code></pre><figcaption></figcaption></figure>
+
+<p>
+<a id="figBoardEventTraced"></a>
+<figure>
+	<img src="Chapters/figures/EventTraced.png" width="100%" id="figBoardEventTraced" alt="Tracing registration to the domain notifications."/>
+	<figcaption>Tracing registration to the domain notifications.</figcaption>
+</figure>
+</p>
+<p>
+Now when you click on a card, you can see the trace in the Transcript but you do not see the changes. This is because we should notify 
+the graphics engine that one element should be redrawn. 
+</p>
+
+<figure><pre><code>MgdRawCardElement &gt;&gt; onFlipped
+	Transcript show: 'On flipped'; cr.
+	self invalidate</code></pre><figcaption></figcaption></figure>
+
+<h3>Handling disappear</h3>
+
+<p>
+There are two ways to implement the disappearance of a card:
+Either setting the opacity of the element to 0
+(Note that the element is still present and receives events.),
+</p>
+<figure><pre><code>MgdRawCardElement &gt;&gt; onDisappear
+	Transcript show: 'On disappear'; cr.
+	self opacity: 0</code></pre><figcaption></figcaption></figure>
+
+<p>
+Or changing the visibility as follows:
+</p>
+<figure><pre><code>MgdRawCardElement &gt;&gt; onDisappear
+	Transcript show: 'On disappear'; cr.
+	self visibility: BlVisibility hidden</code></pre><figcaption></figcaption></figure>
+<p>
+	
+Note that in the latter case the element no longer receives events.
+It is used for layout. 
+</p>
+<p>
+<a id="figBoardMissedPair"></a>
+<figure>
+	<img src="Chapters/figures/BoardMissedPair.png" width="50%" id="figBoardMissedPair" alt="Selecting two cards that are not in pair."/>
+	<figcaption>Selecting two cards that are not in pair.</figcaption>
+</figure>
+</p><h3>Refreshing on missed pair</h3>
+
+<p>
+When the player selects two cards that are not a pair, we present the two cards as shown in Figure <a href="#figBoardMissedPair"></a>.
+Now the clicking on another card will flip back the previous cards. 
+</p>
+<p>
+Remember, a card will raise a notification when flipped in either direction. 
+</p>
+<figure><pre><code>MgdCardModel &gt;&gt; flip
+	flipped := aBoolean.
+	self notifyFlipped</code></pre><figcaption></figcaption></figure>
+
+<p>
+In the method <code>#resetStep</code> we see that all the previous cards are flipped (toggled).
+</p>
+<figure><pre><code>MgdGameModel &gt;&gt; resetStep
+	| lastCard |
+
+	lastCard := self chosenCards  last.
+
+	self chosenCards 
+		allButLastDo: [ :aCard | aCard flip ];
+		removeAll;
+		add: lastCard</code></pre><figcaption></figcaption></figure>
+<p>
+		
+</p>
+<p>
+<a id="figBoardMissedPair"></a>
+<figure>
+	<img src="Chapters/figures/BoardMissedPair.png" width="60%" id="figBoardMissedPair" alt="Selecting two cards that are not a pair."/>
+	<figcaption>Selecting two cards that are not a pair.</figcaption>
+</figure>
+</p>
+
+<h3>Conclusion</h3>
+
+<p>
+At this stage you are done for the simple interaction. Future versions of this document will explain how to add animations.
+</p>
+
+
+
+
+
+  </section>
+
+</article>
+
+<footer>
+
+<div class="footline">
+    <div class="github-link">
+      <a href="" target="blank"><i class="fa fa-code-fork"></i>Github</a>
+    </div>
+  </div>
+</footer>
+
+<script src="/_support/html/js/clipboard.min.js"></script>
+
+<link href="/_support/html/css/featherlight.min.css" rel="stylesheet">
+<script src="/_support/html/js/featherlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script src="/_support/html/js/flex.js"></script>
+<!-- Prettify annotated paragraphs-->
+    <script src="/_support/html/js/annotated-paragraphs.js"></script>
+
+  </body>
+</html>
